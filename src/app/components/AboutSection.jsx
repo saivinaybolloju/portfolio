@@ -11,13 +11,13 @@ export default function AboutSection() {
 
             <div className='flex flex-col md:flex-row items-center justify-center gap-12'>
                 <div className='flex flex-row sm:flex-row gap-6 justify-center'>
-                    <div className='flex flex-row items-center border border-gray-300 rounded-2xl p-6 w-full sm:w-1/2 shadow-sm'>
-                        <Image src="/assests/profilepic.png" alt="Experience icon" width={40} height={40} className="mb-3"></Image>
+                    <div className='border border-gray-300 rounded-2xl '>
+                        <Image src="/assests/experience1.png" alt="Experience icon" width={50} height={40} className="mb-3"></Image>
                         <h3 className='text-xl font-semibold'>Experience</h3>
                         <p className='text-gray-600'>1 year Frontend Development</p>
                     </div>
-                    <div className='flex flex-col items-center border border-gray-300 rounded-2xl p-6 w-full sm:w-1/2 shadow-sm'>
-                        <Image src="/assests/profilepic.png" alt="Experience icon" width={40} height={40} className="mb-3"></Image>
+                    <div className='border border-gray-300 rounded-2xl'>
+                        <Image src="/assests/education1.png" alt="Education icon" width={50} height={50} className="mb-3"></Image>
                         <h3 className='text-xl font-semibold'>Education</h3>
                         <p className='text-gray-600'>Computer Science Engineering</p>
                     </div>
