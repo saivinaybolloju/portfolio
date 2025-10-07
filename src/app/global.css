@@ -11,7 +11,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* NAVBAR */
+/* ---------------- NAVBAR ---------------- */
 nav, .nav-links {
   display: flex;
 }
@@ -46,7 +46,7 @@ a:hover {
   cursor: default;
 }
 
-/* HERO SECTION */
+/* ---------------- HERO SECTION ---------------- */
 #profile {
   display: flex;
   justify-content: center;
@@ -83,7 +83,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* BUTTONS */
+/* ---------------- BUTTONS ---------------- */
 .btn-container {
   display: flex;
   justify-content: center;
@@ -105,7 +105,7 @@ a:hover {
   color: #fff;
 }
 
-/* SOCIAL ICONS */
+/* ---------------- SOCIAL ICONS ---------------- */
 #socials-container {
   display: flex;
   justify-content: center;
@@ -124,7 +124,7 @@ a:hover {
   transform: scale(1.1);
 }
 
-/* ABOUT SECTION */
+/* ---------------- ABOUT SECTION ---------------- */
 #about {
   padding: 4rem 2rem;
   text-align: center;
@@ -160,7 +160,256 @@ a:hover {
   transform: translateY(-5px);
 }
 
-/* RESPONSIVE */
+/* ---------------- EXPERIENCE SECTION ---------------- */
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* ---------------- PROJECTS SECTION ---------------- */
+#projects {
+  position: relative;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+#projects .section__text__p1 {
+  color: gray;
+}
+
+.about-containers {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1 1 300px;
+  min-width: 260px;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px solid rgb(163,163,163);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.color-container {
+  border-color: rgb(163,163,163);
+  background: rgb(250,250,250);
+}
+
+.article-container {
+  margin-bottom: 1rem;
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.project-title {
+  margin: 1rem 0;
+  color: black;
+}
+
+.button {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.project-btn {
+  padding: 0.5rem 0.9rem;
+  border-radius: 1.2rem;
+  border: 1px solid rgb(163,163,163);
+  background: none;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.project-btn:hover {
+  background: rgb(53,53,53);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ---------------- CONTACT SECTION ---------------- */
+#contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  
+}
+
+#contact .section__text__p1 {
+  color: gray;
+  margin-bottom: 0.25rem;
+}
+
+.contact-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgb(85, 85, 85);
+  font-size: 1rem;
+}
+
+.contact-info-item img,
+.contact-info-item .contact-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.contact-info-item a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info-item a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+/* Form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 560px;
+  margin: 2rem auto 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(163,163,163);
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgb(53,53,53);
+}
+
+.contact-form button {
+  align-self: center;
+  margin-top: 1rem;
+  background: none;
+  color: black;
+  border: 1px solid rgb(53, 53, 53);
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.contact-form button:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .contact-info-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .contact-form {
+    width: 90%;
+  }
+}
+
+/* ---------------- FOOTER SECTION ---------------- */
+#footer {
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.footer-nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  
+  flex-wrap: wrap;
+}
+
+.footer-nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.footer-nav-links a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.footer-text {
+  color: gray;
+  font-size: 0.9rem;
+  
+}
+
+/* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -179,5 +428,14 @@ a:hover {
 
   #about {
     padding: 2rem 1rem;
+  }
+
+  .details-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .project-img {
+    height: 160px;
   }
 }
