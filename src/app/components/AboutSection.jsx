@@ -33,10 +33,8 @@ export default function AboutSection() {
                 </div>
 
             </div>
-
         </section>
-        <h3><center>Stay Tuned Coming in...</center></h3>
-      <br /><br /><br />
+        
 
 
     </>
