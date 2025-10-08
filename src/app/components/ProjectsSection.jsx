@@ -15,15 +15,21 @@ export default function ProjectsSection() {
                 {/*Project 1*/}
                 <div className="details-container color-container">
                     <div className="article-container">
-                        <Image src="" alt="Wandervault pic" width={30} height={20} className='project-img'></Image>
+                        <Image src="/assests/wandervault1.jpg" alt="Wandervault pic" width={30} height={20} className='project-img'></Image>
                     </div>
                     <h2 className="experience-sub-title project-title">WanderVault</h2>
                     <div className="button">
                         <button className='btn btn-color-2 project-btn' onClick={()=>{window.open("https://github.com/saivinaybolloju/WanderVault")}}>
                             Source Code
                         </button>
-                        <button className='btn btn-color-2 project-btn' onClick={()=>{window.open("")}}>
-                            APK Download
+                        <button className='btn btn-color-2 project-btn'>
+                            <a 
+                                href="/assests/wandervault.apk" 
+                                download 
+                                >
+                                APK Download
+                                </a>
+
                         </button>
                     </div>
                 </div>
@@ -32,7 +38,7 @@ export default function ProjectsSection() {
                 {/*Project 2*/}
                 <div className="details-container color-container">
                     <div className="article-container">
-                        <Image src="" alt="WA pic" width={30} height={20} className='project-img'></Image>
+                        <Image src="/assests/wasappauto.png" alt="WA pic" width={30} height={20} className='project-img'></Image>
                     </div>
                     <h2 className="experience-sub-title project-title">Whatsapp Automation</h2>
                     <div className="button">

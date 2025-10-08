@@ -14,7 +14,7 @@ export default function AboutSection() {
                     <div className='border border-gray-300 rounded-2xl '>
                         <Image src="/assests/experience1.png" alt="Experience icon" width={50} height={40} className="mb-3"></Image>
                         <h3 className='text-xl font-semibold'>Experience</h3>
-                        <p className='text-gray-600'>1 year Frontend Development</p>
+                        <p className='text-gray-600'>Frontend Development</p>
                     </div>
                     <div className='border border-gray-300 rounded-2xl'>
                         <Image src="/assests/education1.png" alt="Education icon" width={50} height={50} className="mb-3"></Image>
