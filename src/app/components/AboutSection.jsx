@@ -1,42 +1,51 @@
-"use client"
-import React from 'react'
-import Image from "next/image";
+"use client";
+
+import { GraduationCap, Code2 } from "lucide-react";
+import ScrollReveal from "./ui/ScrollReveal";
+import GradientBorderCard from "./ui/GradientBorderCard";
 
 export default function AboutSection() {
   return (
-    <>
-        <section id='about' className='py-20 px-6 md:px-20 bg-white text-center'>
-            <p className='text-gray-500 font-medium text-lg'>Get to Know More</p>
-            <h1 className='text-4xl font-bold mb-10'>About me</h1>
+    <section id="about" className="section-padding">
+      <div className="section-container">
+        <ScrollReveal className="section-header">
+          <p className="section-label">Get to Know More</p>
+          <h2 className="section-title">About Me</h2>
+        </ScrollReveal>
 
-            <div className='flex flex-col md:flex-row items-center justify-center gap-12'>
-                <div className='flex flex-row sm:flex-row gap-6 justify-center'>
-                    <div className='border border-gray-300 rounded-2xl '>
-                        <Image src="/assests/experience1.png" alt="Experience icon" width={50} height={40} className="mb-3"></Image>
-                        <h3 className='text-xl font-semibold'>Experience</h3>
-                        <p className='text-gray-600'>Frontend Development</p>
-                    </div>
-                    <div className='border border-gray-300 rounded-2xl'>
-                        <Image src="/assests/education1.png" alt="Education icon" width={50} height={50} className="mb-3"></Image>
-                        <h3 className='text-xl font-semibold'>Education</h3>
-                        <p className='text-gray-600'>Computer Science Engineering</p>
-                    </div>
-                    <br />
-                    <br />
-                    <p className='text-gray-700 leading-relaxed'>
-                        I'm a passionate developer with a strong focus on creating user-friendly
-            and efficient applications. My journey in tech revolves around learning,
-            experimenting, and constantly improving my skills. I love exploring
-            frontend technologies and turning creative ideas into working products.
-                    </p>
+        <div className="section-body">
+          <ScrollReveal delay={0.1}>
+            <p className="max-w-3xl text-base leading-relaxed text-[#9CA3AF] sm:text-lg">
+              I&apos;m a passionate software developer with hands-on experience building
+              full-stack and mobile applications. From architecting React Native sports
+              platforms to engineering AI-powered travel planners, I thrive at the
+              intersection of clean code, user experience, and real-world problem solving.
+            </p>
+          </ScrollReveal>
 
-                </div>
+          <div className="content-grid sm:grid-cols-2">
+            <ScrollReveal delay={0.15} className="h-full">
+              <GradientBorderCard className="h-full">
+                <Code2 className="mb-3 h-7 w-7 text-[#F5C06A]" />
+                <h3 className="mb-1 text-base font-semibold text-[#F3F4F6]">Experience</h3>
+                <p className="text-sm leading-relaxed text-[#9CA3AF]">
+                  Full-Stack &amp; Mobile Development
+                </p>
+              </GradientBorderCard>
+            </ScrollReveal>
 
-            </div>
-        </section>
-        
-
-
-    </>
-  )
+            <ScrollReveal delay={0.2} className="h-full">
+              <GradientBorderCard className="h-full">
+                <GraduationCap className="mb-3 h-7 w-7 text-[#C9B8FF]" />
+                <h3 className="mb-1 text-base font-semibold text-[#F3F4F6]">Education</h3>
+                <p className="text-sm leading-relaxed text-[#9CA3AF]">
+                  Computer Science Engineering
+                </p>
+              </GradientBorderCard>
+            </ScrollReveal>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

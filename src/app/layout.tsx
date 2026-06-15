@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./global.css";
+import CursorSpotlight from "./components/ui/CursorSpotlight";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: "Sai Vinay Portfolio",
-  description: "Either you WIN or you LEARN",
+  title: "Sai Vinay Bolloju | Software Developer",
+  description:
+    "Software Developer Intern specializing in Full-Stack & Mobile development. Building high-performance applications with React, Node.js, and React Native.",
 };
 
 export default function RootLayout({
@@ -23,11 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.variable} antialiased bg-[#0B0F19] text-[#F3F4F6]`}>
+        <CursorSpotlight>{children}</CursorSpotlight>
       </body>
     </html>
   );
